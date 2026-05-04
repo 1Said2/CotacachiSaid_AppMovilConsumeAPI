@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvNombreCurso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Curso"
+                android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+
+            <CheckBox
+                android:id="@+id/chckSeleccionado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccionar"
+                android:layout_gravity="end"
+                android:contentDescription="Seleccionar curso" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
